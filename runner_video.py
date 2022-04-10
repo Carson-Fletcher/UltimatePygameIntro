@@ -1,6 +1,8 @@
-import pygame
+from random import choice, randint
 from sys import exit
-from random import randint, choice
+
+import pygame
+
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self):
@@ -127,8 +129,9 @@ test_font = pygame.font.Font('font/Pixeltype.ttf', 50)
 game_active = False
 start_time = 0
 score = 0
-bg_music = pygame.mixer.Sound('audio/music.wav')
-bg_music.play(loops = -1)
+pygame.mixer.music.load('audio/music.wav')
+pygame.mixer.music.play(loops = -1)
+pygame.mixer.music.set_volume(0.075)
 
 #Groups
 player = pygame.sprite.GroupSingle()
