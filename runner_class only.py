@@ -1,6 +1,8 @@
-import pygame
+from random import choice, randint
 from sys import exit
-from random import randint, choice
+
+import pygame
+
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self):
@@ -16,7 +18,7 @@ class Player(pygame.sprite.Sprite):
 		self.gravity = 0
 
 		self.jump_sound = pygame.mixer.Sound('audio/jump.mp3')
-		self.jump_sound.set_volume(0.5)
+		self.jump_sound.set_volume(0.05)
 
 	def player_input(self):
 		keys = pygame.key.get_pressed()

@@ -131,7 +131,7 @@ start_time = 0
 score = 0
 pygame.mixer.music.load('audio/music.wav')
 pygame.mixer.music.play(loops = -1)
-pygame.mixer.music.set_volume(0.075)
+pygame.mixer.music.set_volume(0.05)
 
 #Groups
 player = pygame.sprite.GroupSingle()
